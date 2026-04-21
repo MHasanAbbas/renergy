@@ -6,9 +6,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Verdant Engineering | Premium B2B Engineering Services',
   description:
-    'Verdant Engineering delivers premium engineering consultancy for oil & gas, cryogenic, refining, and industrial sectors across the Gulf.',
+    'Verdant Engineering delivers premium engineering consultancy for oil & gas, cryogenic, refining, and industrial sectors globally.',
   keywords:
-    'engineering consultancy, oil & gas, LNG, process engineering, technical safety, Oman, Middle East',
+    'engineering consultancy, oil & gas, LNG, process engineering, technical safety, industrial engineering',
   viewport: 'width=device-width, initial-scale=1',
   icons: {
     icon: '/favicon.ico',

@@ -18,7 +18,7 @@ export default function Contact() {
         subtitle="Get in Touch"
         description="We work best when engaged early. Whether you\'re exploring feasibility or refining detailed design, we\'re ready to listen and apply rigorous engineering thinking to your project."
         image="/images/contact-oman-office.jpg"
-        imageAlt="Verdant Engineering contact"
+        imageAlt="Ocean Energy office"
         imagePosition="58% center"
       />
 
@@ -38,12 +38,27 @@ export default function Contact() {
               <div className="mt-12 space-y-8">
                 <div>
                   <h3 className="font-heading font-bold text-navy mb-2">
-                    Head Office
+                    Office - United Kingdom
                   </h3>
                   <p className="text-sm text-graphite leading-relaxed">
-                    Muscat, Oman
+                    29 Summerwood Road
                     <br />
-                    Gulf Region
+                    Middlesex TW7 7QD
+                    <br />
+                    United Kingdom
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-heading font-bold text-navy mb-2">
+                    Office - Saudi Arabia
+                  </h3>
+                  <p className="text-sm text-graphite leading-relaxed">
+                    1st floor, Business Centre
+                    <br />
+                    Al Jabal Road, Jubail
+                    <br />
+                    Saudi Arabia
                   </p>
                 </div>
 
@@ -52,10 +67,10 @@ export default function Contact() {
                     Email
                   </h3>
                   <a
-                    href="mailto:info@verdant-eng.com"
+                    href="mailto:mail@oenergy.co.uk"
                     className="text-sm text-teal hover:text-teal-dark font-medium"
                   >
-                    info@verdant-eng.com
+                    mail@oenergy.co.uk
                   </a>
                 </div>
 
@@ -64,10 +79,10 @@ export default function Contact() {
                     Telephone
                   </h3>
                   <a
-                    href="tel:+96890000000"
+                    href="tel:+447950364456"
                     className="text-sm text-teal hover:text-teal-dark font-medium"
                   >
-                    +968 90 000 000
+                    +44 7950 364 456
                   </a>
                 </div>
 
@@ -125,8 +140,8 @@ export default function Contact() {
                 a: 'We work flexibly across multiple models: focused consulting on specific technical issues, integrated engineering campaigns across multiple disciplines, resource augmentation for larger teams, or advisory roles. We tailor engagement to fit your project needs.',
               },
               {
-                q: 'Do you work with international clients or only Gulf-based?',
-                a: 'We work with clients globally, but our deepest expertise and primary focus is Gulf-based industrial operations. Our regional knowledge and operational context are particular strengths.',
+                q: 'Do you work with international clients or only in specific regions?',
+                a: 'We work with clients across Europe, the Middle East, and South Asia. Our experience spans multiple regions and industrial contexts, enabling us to bring regional understanding combined with global best practices.',
               },
               {
                 q: 'What are your typical project timelines?',

@@ -29,8 +29,8 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <SectionIntro
             label="Our Track Record"
-            title="120+ Projects. Consistent Excellence."
-            description="Over sixteen years we've supported projects across every sector we serve. From small focused feasibility studies to large integrated engineering campaigns, we maintain the same commitment to rigor, safety, and quality."
+            title="Proven Project Delivery. Consistent Excellence."
+            description="Over many years we've supported projects across every sector we serve. From small focused feasibility studies to large integrated engineering campaigns, we maintain the same commitment to rigor, safety, and quality."
           />
         </div>
       </section>
@@ -38,80 +38,97 @@ export default function Portfolio() {
       {/* Case Studies */}
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
-          <div className="space-y-16">
-            {CASE_STUDIES.map((study, idx) => (
-              <div key={study.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                {/* Image */}
-                <div
-                  className={`relative h-64 sm:h-80 rounded-sm overflow-hidden bg-off-white shadow-lg ${
-                    idx % 2 === 1 ? 'lg:order-2' : ''
-                  }`}
-                >
-                  <Image
-                    src={study.image}
-                    alt={study.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className={idx % 2 === 1 ? 'lg:order-1' : ''}>
-                  <div className="inline-block px-3 py-1 bg-teal/10 text-teal text-xs font-semibold uppercase tracking-wider rounded-sm mb-4">
-                    {study.sector}
-                  </div>
-
-                  <h3 className="font-heading font-bold text-3xl text-navy mb-4">
-                    {study.title}
-                  </h3>
-
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-sm text-navy mb-3">
-                      Disciplines Applied
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {study.disciplines.map((discipline) => (
-                        <span
-                          key={discipline}
-                          className="text-xs bg-navy/5 text-navy px-3 py-1 rounded-sm"
-                        >
-                          {discipline}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-navy mb-2">The Challenge</h4>
-                    <p className="text-graphite leading-relaxed">
-                      {study.challenge}
-                    </p>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-navy mb-2">Our Solution</h4>
-                    <p className="text-graphite leading-relaxed">
-                      {study.solution}
-                    </p>
-                  </div>
-
-                  <div className="pb-6 border-t border-light-steel pt-6">
-                    <h4 className="font-semibold text-navy mb-2">The Outcome</h4>
-                    <p className="text-graphite leading-relaxed">
-                      {study.outcome}
-                    </p>
-                  </div>
-
-                  <a
-                    href="/contact"
-                    className="inline-block text-teal font-semibold hover:text-teal-dark transition-colors"
+          {CASE_STUDIES.length > 0 ? (
+            <div className="space-y-16">
+              {CASE_STUDIES.map((study, idx) => (
+                <div key={study.id} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  {/* Image */}
+                  <div
+                    className={`relative h-64 sm:h-80 rounded-sm overflow-hidden bg-off-white shadow-lg ${
+                      idx % 2 === 1 ? 'lg:order-2' : ''
+                    }`}
                   >
-                    Discuss a Similar Project →
-                  </a>
+                    <Image
+                      src={study.image}
+                      alt={study.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className={idx % 2 === 1 ? 'lg:order-1' : ''}>
+                    <div className="inline-block px-3 py-1 bg-teal/10 text-teal text-xs font-semibold uppercase tracking-wider rounded-sm mb-4">
+                      {study.sector}
+                    </div>
+
+                    <h3 className="font-heading font-bold text-3xl text-navy mb-4">
+                      {study.title}
+                    </h3>
+
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-sm text-navy mb-3">
+                        Disciplines Applied
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {study.disciplines.map((discipline) => (
+                          <span
+                            key={discipline}
+                            className="text-xs bg-navy/5 text-navy px-3 py-1 rounded-sm"
+                          >
+                            {discipline}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-navy mb-2">The Challenge</h4>
+                      <p className="text-graphite leading-relaxed">
+                        {study.challenge}
+                      </p>
+                    </div>
+
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-navy mb-2">Our Solution</h4>
+                      <p className="text-graphite leading-relaxed">
+                        {study.solution}
+                      </p>
+                    </div>
+
+                    <div className="pb-6 border-t border-light-steel pt-6">
+                      <h4 className="font-semibold text-navy mb-2">The Outcome</h4>
+                      <p className="text-graphite leading-relaxed">
+                        {study.outcome}
+                      </p>
+                    </div>
+
+                    <a
+                      href="/contact"
+                      className="inline-block text-teal font-semibold hover:text-teal-dark transition-colors"
+                    >
+                      Discuss a Similar Project →
+                    </a>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <h3 className="font-heading font-bold text-2xl text-navy mb-4">
+                Project Experience
+              </h3>
+              <p className="text-graphite max-w-2xl mx-auto mb-8 leading-relaxed">
+                We have successfully delivered projects across all our served sectors. Detailed project examples and case studies are available upon request. Contact us to discuss how our engineering expertise can address your specific challenges.
+              </p>
+              <a
+                href="/contact"
+                className="inline-block px-8 py-3 bg-teal text-white font-semibold rounded hover:bg-teal-dark transition-colors"
+              >
+                Get in Touch
+              </a>
+            </div>
+          )}
         </div>
       </section>
 
@@ -120,16 +137,16 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <SectionIntro
             label="By the Numbers"
-            title="Our Project Experience"
-            description="Sixteen years of consistent delivery across complex industrial projects."
+            title="Our Team Expertise"
+            description="A team of Subject Matter Experts delivering comprehensive engineering solutions."
           />
 
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                number: '120+',
-                label: 'Projects Delivered',
-                description: 'Feasibility studies through operational commissioning',
+                number: '15+',
+                label: 'Years Experience',
+                description: 'Subject Matter Experts with deep technical knowledge',
               },
               {
                 number: '7',
@@ -137,14 +154,14 @@ export default function Portfolio() {
                 description: 'Complete integrated technical capability',
               },
               {
-                number: '50+',
-                label: 'Active Client Relationships',
-                description: 'Operators and contractors across multiple sectors',
+                number: '5',
+                label: 'Key Sectors',
+                description: 'Oil & Gas, Cryogenics, Refining, Storage, Utilities',
               },
               {
-                number: '16+',
-                label: 'Years in Region',
-                description: 'Deep Gulf experience and sector knowledge',
+                number: '3',
+                label: 'Regions Served',
+                description: 'Europe, Middle East, and South Asia',
               },
             ].map((stat, idx) => (
               <div

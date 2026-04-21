@@ -9,7 +9,7 @@ import { SERVICES, SECTORS } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Verdant Engineering | Home',
   description:
-    'Premium engineering consultancy delivering process engineering, technical safety, and system design for oil & gas, LNG, and industrial operations across the Gulf.',
+    'Premium engineering consultancy delivering process engineering, technical safety, and system design for oil & gas, LNG, and industrial operations globally.',
 }
 
 export default function Home() {

@@ -202,47 +202,7 @@ export const SECTORS: Sector[] = [
   },
 ]
 
-export const CASE_STUDIES: CaseStudy[] = [
-  {
-    id: 'case-001',
-    title: 'LNG Production System Optimization',
-    sector: 'Cryogenic (LNG/LPG/NGL)',
-    disciplines: ['Process Engineering', 'Technical Safety', 'Pipeline Engineering'],
-    challenge:
-      'A Middle Eastern LNG facility operating at 95% nameplate capacity needed a 12% throughput increase without major capital investment.',
-    solution:
-      'We conducted a comprehensive process analysis identifying bottlenecks in the pre-cooling and liquefaction train. We specified new heat exchanger configurations, optimised pressure profiles, and redesigned the low-temperature separation system. All changes were implemented through retrofit on existing infrastructure.',
-    outcome:
-      'The facility achieved a 14% increase in throughput within 18 months of implementation, generating significant additional revenue. Operational reliability improved by 8% through enhanced process margins.',
-    image: '/images/case-lng-optimization.jpg',
-  },
-  {
-    id: 'case-002',
-    title: 'Offshore Platform Safety System Upgrade',
-    sector: 'Oil & Gas Processing',
-    disciplines: ['Technical Safety', 'Control & Instrumentation', 'Mechanical Static Equipment'],
-    challenge:
-      'An offshore production platform required compliance with updated safety regulations and needed to integrate new Safety Instrumented Systems without shutting down operations.',
-    solution:
-      'We designed a comprehensive SIL 2 safety system architecture with redundant instrumentation and hard-wired shutdown logic. Implementation was phased to maintain continuous production. New DCS logic was validated offline before staged deployment.',
-    outcome:
-      'The system achieved full regulatory compliance and reduced potential incident severity by an order of magnitude. The platform resumed operation with improved operational confidence.',
-    image: '/images/case-offshore-safety.jpg',
-  },
-  {
-    id: 'case-003',
-    title: 'Refinery Debottlenecking Project',
-    sector: 'Refining & Petrochemicals',
-    disciplines: ['Process Engineering', 'Piping & Plot Planning', 'Mechanical Static Equipment'],
-    challenge:
-      'A refinery wanted to increase crude throughput by 20% but faced constraints in the atmospheric distillation unit and utility systems.',
-    solution:
-      'We performed a detailed hydraulic analysis of the distillation column internals, recommended advanced tray designs, and specified larger reboiler and condenser duties. Utility system modifications enabled the increased demand.',
-    outcome:
-      'The refinery increased crude throughput by 22% within one operating season. The investment was recovered through improved margins within 2.5 years.',
-    image: '/images/case-refinery-debot.jpg',
-  },
-]
+export const CASE_STUDIES: CaseStudy[] = []
 
 export const QHSE_PILLARS = [
   {

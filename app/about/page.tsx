@@ -7,7 +7,7 @@ import { CTABanner } from '@/components/CTABanner'
 export const metadata: Metadata = {
   title: 'Verdant Engineering | About Us',
   description:
-    'Learn about our team of senior engineering consultants serving the Gulf region with 16+ years of combined expertise in oil & gas, LNG, and industrial engineering.',
+    'Learn about our team of senior engineering consultants with 15+ years of expertise in oil & gas, LNG, and industrial engineering serving clients globally.',
 }
 
 export default function About() {

@@ -251,8 +251,8 @@ export default function Compliance() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <SectionIntro
             label="Environmental"
-            title="Responsible Engineering for Gulf Operations"
-            description="We design systems that protect the Gulf's unique environment while maintaining operational efficiency. Environmental responsibility is engineered, not added."
+            title="Responsible Engineering for Industrial Operations"
+            description="We design systems that protect the environment while maintaining operational efficiency. Environmental responsibility is engineered, not added."
           />
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -276,7 +276,7 @@ export default function Compliance() {
                   },
                   {
                     title: 'Ecosystem Protection',
-                    desc: 'Consider Gulf-specific environmental sensitivities in every design decision.',
+                    desc: 'Consider regional environmental sensitivities in every design decision.',
                   },
                 ].map((item, idx) => (
                   <li key={idx} className="border-l-4 border-teal pl-4">

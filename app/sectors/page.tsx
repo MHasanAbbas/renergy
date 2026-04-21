@@ -8,7 +8,7 @@ import { SECTORS } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Verdant Engineering | Industry Sectors',
   description:
-    'We specialize in oil & gas, LNG, refining, storage, and utility sectors across the Middle East and Gulf region.',
+    'We specialize in oil & gas, LNG, refining, storage, and utility sectors across Europe, the Middle East, and South Asia.',
 }
 
 export default function Sectors() {
@@ -18,7 +18,7 @@ export default function Sectors() {
       <Hero
         title="Five Strategic Industrial Sectors"
         subtitle="Market Focus"
-        description="We concentrate our expertise on the sectors that define the Gulf's industrial landscape. Deep focus enables deep expertise."
+        description="We concentrate our expertise on the sectors where industrial operations face the most complex engineering challenges. Deep focus enables deep expertise."
         image="/images/sectors-hero.jpg"
         imageAlt="Industrial sectors overview"
         imagePosition="68% center"
@@ -30,7 +30,7 @@ export default function Sectors() {
           <SectionIntro
             label="Strategic Sectors"
             title="Where Our Expertise Concentrates"
-            description="We don't attempt to serve every sector. We concentrate our resources on the five industries that matter most in the Gulf—where our expertise is deepest and our value is greatest."
+            description="We don't attempt to serve every sector. We concentrate our resources on the five industries where our expertise is deepest and our value is greatest."
           />
         </div>
       </section>
@@ -51,21 +51,21 @@ export default function Sectors() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <SectionIntro
             label="Our Context"
-            title="Gulf-Based, Sector-Focused"
-            description="Our expertise is rooted in the industrial context of the Middle East. We understand the operational environment, regulatory landscape, and technical challenges unique to this region."
+            title="Global Expertise, Sector-Focused"
+            description="Our expertise spans multiple industrial regions globally. We understand the operational environment, regulatory landscape, and technical challenges across the regions we serve."
           />
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div className="bg-white border border-light-steel rounded-sm p-6 sm:p-8">
                 <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-                  Regional Understanding
+                  Global Presence
                 </h3>
                 <p className="text-graphite mb-4 leading-relaxed">
-                  We operate from Oman with deep connections across the Gulf region. We understand local regulatory requirements, operational practices, environmental context, and business expectations.
+                  We operate from offices in the United Kingdom and Saudi Arabia, serving clients across Europe, the Middle East, and South Asia. We understand local regulatory requirements, operational practices, environmental context, and business expectations in each region.
                 </p>
                 <p className="text-graphite leading-relaxed">
-                  This isn't generic international engineering applied locally—it's engineering developed specifically for Gulf industrial operations.
+                  This isn't generic international engineering applied locally—it's engineering developed specifically for regional industrial operations.
                 </p>
               </div>
 
@@ -77,7 +77,7 @@ export default function Sectors() {
                   We've supported operations across climate extremes, managed maintenance in remote locations, and engineered systems that tolerate supply chain constraints.
                 </p>
                 <p className="text-graphite leading-relaxed">
-                  Our designs are robust, practical, and optimised for real-world Gulf operations.
+                  Our designs are robust, practical, and optimised for real-world industrial operations across the regions we serve.
                 </p>
               </div>
             </div>
