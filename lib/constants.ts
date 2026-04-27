@@ -2,11 +2,11 @@ import { Service, Sector, CaseStudy, NavItem } from './types'
 
 export const NAVIGATION: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
+  { label: 'About', href: '/#about' },
   { label: 'Services', href: '/services' },
   { label: 'Sectors', href: '/sectors' },
-  { label: 'Compliance', href: '/compliance' },
   { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Policy', href: '/policy' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -24,7 +24,8 @@ export const SERVICES: Service[] = [
       'Process safety integration',
     ],
     impact: 'Establishes the technical foundation for all downstream engineering disciplines and project success.',
-    image: '/images/service-process-engineering.jpg',
+    image: '/images/service-process-engineering-real.jpg',
+    imageAlt: 'Process engineering refinery flow diagram',
   },
   {
     id: 'technical-safety',
@@ -39,7 +40,8 @@ export const SERVICES: Service[] = [
       'Emergency procedures & response planning',
     ],
     impact: 'Protects personnel, assets, and operations while meeting regulatory requirements.',
-    image: '/images/service-technical-safety.jpg',
+    image: '/images/service-technical-safety-real.jpg',
+    imageAlt: 'Technical safety fire and gas detection system',
   },
   {
     id: 'control-instrumentation',
@@ -55,6 +57,7 @@ export const SERVICES: Service[] = [
     ],
     impact: 'Transforms process data into operational control and continuous improvement.',
     image: '/images/service-instrumentation-control.jpg',
+    imageAlt: 'Process control instrumentation dashboard',
   },
   {
     id: 'piping-plotplan',
@@ -70,6 +73,7 @@ export const SERVICES: Service[] = [
     ],
     impact: 'Creates buildable, maintainable, efficient facilities that stand for decades.',
     image: '/images/service-piping-plotplan.jpg',
+    imageAlt: 'Piping isometric and plot plan engineering layout',
   },
   {
     id: 'mechanical-static',
@@ -85,6 +89,7 @@ export const SERVICES: Service[] = [
     ],
     impact: 'Ensures equipment withstands operating pressures, temperatures, and environmental conditions.',
     image: '/images/service-mechanical-static.jpg',
+    imageAlt: 'Mechanical static pressure vessel engineering drawing',
   },
   {
     id: 'mechanical-rotating',
@@ -100,6 +105,7 @@ export const SERVICES: Service[] = [
     ],
     impact: 'Delivers the kinetic systems that move, compress, and transform your process streams.',
     image: '/images/service-mechanical-rotating.jpg',
+    imageAlt: 'Mechanical rotating pump compressor turbine',
   },
   {
     id: 'pipeline-engineering',
@@ -115,6 +121,7 @@ export const SERVICES: Service[] = [
     ],
     impact: 'Moves product safely and efficiently across your operational geography.',
     image: '/images/service-pipeline.jpg',
+    imageAlt: 'Pipeline route and valve station design',
   },
 ]
 

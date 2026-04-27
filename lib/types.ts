@@ -6,6 +6,7 @@ export interface Service {
   items: string[]
   impact: string
   image: string
+  imageAlt: string
 }
 
 export interface Sector {

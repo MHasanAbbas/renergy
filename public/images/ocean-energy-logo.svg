@@ -1,0 +1,37 @@
+<svg
+  width="290"
+  height="72"
+  viewBox="0 0 290 72"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="xMidYMid meet"
+  role="img"
+  aria-labelledby="logoTitle"
+>
+  <title id="logoTitle">Ocean Energy Middle East</title>
+
+  <!-- Add generous canvas padding so the brand never clips in responsive layouts -->
+  <circle cx="28" cy="36" r="16" fill="#1e7b7c" />
+  <circle cx="41" cy="28" r="12" fill="#1e7b7c" opacity="0.7" />
+  <circle cx="50" cy="44" r="10" fill="#1e7b7c" opacity="0.5" />
+
+  <text
+    x="72"
+    y="31"
+    font-family="Montserrat, Arial, sans-serif"
+    font-size="18"
+    font-weight="700"
+    fill="#1a2d4a"
+  >
+    OCEAN ENERGY
+  </text>
+  <text
+    x="72"
+    y="52"
+    font-family="Montserrat, Arial, sans-serif"
+    font-size="12"
+    font-weight="600"
+    fill="#1e7b7c"
+  >
+    MIDDLE EAST
+  </text>
+</svg>

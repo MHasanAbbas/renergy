@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import Link from 'next/link'
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -310,7 +311,14 @@ export function ContactForm() {
             className="w-4 h-4 accent-teal mt-1 flex-shrink-0"
           />
           <span className="text-xs text-graphite">
-            I agree to Verdant Engineering's privacy policy and consent to being contacted regarding this enquiry.{' '}
+            I agree to Ocean Energy Middle East&apos;s{' '}
+            <Link
+              href="/policy"
+              className="text-teal underline underline-offset-2 transition-colors hover:text-teal-dark"
+            >
+              privacy policy
+            </Link>{' '}
+            and consent to being contacted regarding this enquiry.{' '}
             <span className="text-teal">*</span>
           </span>
         </label>

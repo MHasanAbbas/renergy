@@ -7,7 +7,7 @@ import { CTABanner } from '@/components/CTABanner'
 import { SERVICES, SECTORS } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Verdant Engineering | Home',
+  title: 'Ocean Energy Middle East | Home',
   description:
     'Premium engineering consultancy delivering process engineering, technical safety, and system design for oil & gas, LNG, and industrial operations globally.',
 }
@@ -25,6 +25,86 @@ export default function Home() {
         imageAlt="Industrial engineering facility"
         imagePosition="78% center"
       />
+
+      {/* About Us Section */}
+      <section id="about" className="py-20 sm:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left: Content */}
+            <div>
+              <p className="text-teal font-semibold text-sm uppercase tracking-wider mb-4">
+                About Us
+              </p>
+              <h2 className="font-heading font-bold text-4xl sm:text-5xl text-navy mb-6 leading-tight">
+                Professional Engineering Expertise
+              </h2>
+              <p className="text-lg text-graphite mb-6 leading-relaxed">
+                Ocean Energy Middle East is owned and operated by professional engineers providing efficient solutions to engineering challenges. We have extensive experience in gas processing facilities, cryogenic plants (LNG, LPG, NGL), refineries, petrochemical plants, storage facilities, and utilities.
+              </p>
+              <p className="text-lg text-graphite mb-6 leading-relaxed">
+                Our team comprises Subject Matter Experts (SMEs) each with 15+ years of experience in large and small hydrocarbon projects. We provide excellent services to our clients in Europe, Middle East, and South Asia.
+              </p>
+              <p className="text-lg text-graphite leading-relaxed">
+                We perform comprehensive engineering services including feasibility studies, concept selection, FEED, detailed engineering, procurement support, technical bid evaluation, commissioning, startup, and performance testing. We conduct HAZOP and QRA studies on a routine basis.
+              </p>
+            </div>
+
+            {/* Right: Key Highlights */}
+            <div className="bg-off-white rounded-sm p-8 sm:p-12">
+              <h3 className="font-heading font-bold text-2xl text-navy mb-8">
+                What We Bring
+              </h3>
+              <div className="space-y-6">
+                <div>
+                  <div className="flex items-start gap-4">
+                    <div className="text-teal text-3xl flex-shrink-0">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-navy mb-2">
+                        Deep Technical Knowledge
+                      </h4>
+                      <p className="text-sm text-graphite">
+                        15+ years of direct experience in gas processing, cryogenics, refineries, petrochemicals, storage, and utilities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-start gap-4">
+                    <div className="text-teal text-3xl flex-shrink-0">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-navy mb-2">
+                        Global Experience
+                      </h4>
+                      <p className="text-sm text-graphite">
+                        Serving clients in Europe, Middle East, and South Asia with proven experience on large and small projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-start gap-4">
+                    <div className="text-teal text-3xl flex-shrink-0">
+                      ✓
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-navy mb-2">
+                        Complete Capability
+                      </h4>
+                      <p className="text-sm text-graphite">
+                        All seven engineering disciplines under one roof for integrated, coordinated delivery.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Capability Section */}
       <section className="py-20 sm:py-28 bg-off-white">
@@ -51,7 +131,7 @@ export default function Home() {
             {/* Left: Content */}
             <div>
               <p className="text-teal font-semibold text-sm uppercase tracking-wider mb-4">
-                Why Choose Ocean Energy
+                Why Choose Us
               </p>
               <h2 className="font-heading font-bold text-4xl sm:text-5xl text-navy mb-6 leading-tight">
                 Professional Engineering Excellence
@@ -105,7 +185,7 @@ export default function Home() {
               </div>
 
               <a
-                href="/about"
+                href="/#about"
                 className="inline-block text-teal font-semibold hover:text-teal-dark transition-colors"
               >
                 Learn about our team →
@@ -154,7 +234,7 @@ export default function Home() {
           <SectionIntro
             label="Market Focus"
             title="Five Core Industrial Sectors"
-            description="We specialise in the industrial sectors that power the Gulf's economic engine. Our expertise is deep, our experience is proven."
+            description="We specialise in the sectors where complex industrial operations face the most significant engineering challenges. Our expertise is deep, our experience is proven."
           />
 
           {/* Sectors Grid */}

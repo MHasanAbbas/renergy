@@ -6,7 +6,7 @@ import { CTABanner } from '@/components/CTABanner'
 import { SECTORS } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Verdant Engineering | Industry Sectors',
+  title: 'Ocean Energy Middle East | Industry Sectors',
   description:
     'We specialize in oil & gas, LNG, refining, storage, and utility sectors across Europe, the Middle East, and South Asia.',
 }
@@ -97,10 +97,10 @@ export default function Sectors() {
 
               <div className="bg-white border border-light-steel rounded-sm p-6 sm:p-8">
                 <h3 className="font-heading font-bold text-2xl text-navy mb-4">
-                  Relationship Network
+                  Vendor Relationships
                 </h3>
                 <p className="text-graphite mb-4 leading-relaxed">
-                  Over sixteen years we've built trusted relationships with equipment vendors, construction contractors, and operational teams.
+                  We've built trusted relationships with equipment vendors, construction contractors, and operational teams across our regions of operation.
                 </p>
                 <p className="text-graphite leading-relaxed">
                   These connections enhance our ability to source solutions, manage logistics, and deliver successful projects.
@@ -125,7 +125,7 @@ export default function Sectors() {
               {
                 sector: 'Oil & Gas Processing',
                 projects: [
-                  'Upstream platform design',
+                  'Gas processing facility design',
                   'Crude stabilisation systems',
                   'Associated gas recovery',
                   'Production debottlenecking',
@@ -168,12 +168,12 @@ export default function Sectors() {
                 ],
               },
               {
-                sector: 'Multi-Sector',
+                sector: 'Multi-Sector Integration',
                 projects: [
                   'Complex integrated projects',
                   'Multi-discipline coordination',
-                  'Cross-sector feasibility',
-                  'Strategic engineering plans',
+                  'Cross-sector feasibility studies',
+                  'Comprehensive technical packages',
                 ],
               },
             ].map((item, idx) => (

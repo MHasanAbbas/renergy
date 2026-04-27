@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { NAVIGATION } from '@/lib/constants'
+import { Logo } from './Logo'
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -10,12 +11,10 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b border-light-steel">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 gap-4">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
-            <div className="text-2xl font-bold font-heading text-navy">
-              Verdant
-            </div>
+          <Link href="/" className="flex min-w-0 flex-shrink-0 items-center py-2">
+            <Logo priority widthClassName="w-[150px] sm:w-[180px] lg:w-[210px]" />
           </Link>
 
           {/* Desktop Navigation */}

@@ -8,7 +8,7 @@ interface ServiceCardProps {
   description: string
   items: string[]
   image: string
-  isExpanded?: boolean
+  imageAlt: string
 }
 
 export function ServiceCard({
@@ -18,58 +18,54 @@ export function ServiceCard({
   description,
   items,
   image,
-  isExpanded = false,
+  imageAlt,
 }: ServiceCardProps) {
   return (
-    <div
-      className="group bg-white border border-light-steel rounded-sm overflow-hidden hover:shadow-lg transition-shadow"
+    <article
+      className="group flex h-full flex-col overflow-hidden rounded-sm border border-light-steel bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-teal/40 hover:shadow-[0_18px_40px_rgba(18,38,62,0.16)]"
       id={id}
     >
-      {/* Image */}
-      <div className="relative h-48 sm:h-56 overflow-hidden bg-off-white">
+      <div className="relative h-56 overflow-hidden border-b border-light-steel bg-off-white">
         <Image
           src={image}
-          alt={title}
+          alt={imageAlt}
           fill
-          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
         />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(10,20,36,0.08)_0%,_rgba(10,20,36,0.2)_100%)]" />
       </div>
 
-      {/* Content */}
-      <div className="p-6 sm:p-8">
-        {/* Value badge */}
-        <div className="inline-block px-3 py-1 bg-teal/10 text-teal text-xs font-semibold uppercase tracking-wider rounded-sm mb-4">
+      <div className="flex flex-1 flex-col p-6 sm:p-8">
+        <div className="mb-4 inline-block rounded-sm bg-teal/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-teal">
           {value}
         </div>
 
-        {/* Title */}
-        <h3 className="font-heading font-bold text-2xl text-navy mb-3">
+        <h3 className="mb-3 font-heading text-2xl font-bold text-navy">
           {title}
         </h3>
 
-        {/* Description */}
-        <p className="text-graphite mb-6 leading-relaxed">
+        <p className="mb-6 text-graphite leading-relaxed">
           {description}
         </p>
 
-        {/* Items List */}
-        <ul className="space-y-2 mb-6">
+        <ul className="mb-8 space-y-2">
           {items.map((item, idx) => (
             <li key={idx} className="flex items-start gap-3 text-sm text-graphite">
-              <span className="inline-block w-1.5 h-1.5 bg-teal rounded-full mt-2 flex-shrink-0" />
+              <span className="mt-2 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-teal" />
               <span>{item}</span>
             </li>
           ))}
         </ul>
 
-        {/* CTA */}
         <Link
           href="/contact"
-          className="inline-block text-teal font-semibold text-sm hover:text-teal-dark transition-colors"
+          className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-teal transition-colors hover:text-teal-dark"
         >
-          Discuss This Discipline →
+          Learn more
+          <span aria-hidden="true">{'->'}</span>
         </Link>
       </div>
-    </div>
+    </article>
   )
 }

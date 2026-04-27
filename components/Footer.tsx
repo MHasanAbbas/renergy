@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Logo } from './Logo'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -10,13 +11,15 @@ export function Footer() {
         <div className="py-16 sm:py-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-6 text-white">Verdant</h3>
+            <Link href="/" className="inline-flex max-w-full mb-6 rounded-sm bg-white px-3 py-2">
+              <Logo widthClassName="w-[160px] sm:w-[180px]" />
+            </Link>
             <p className="text-sm text-light-steel leading-relaxed">
-              Premium engineering consultancy. We design the systems that power the Gulf's most critical industrial operations.
+              Professional engineering services to oil & gas, cryogenics and refining industries.
             </p>
             <div className="mt-6">
-              <p className="text-xs text-light-steel mb-1">Muscat, Oman</p>
-              <p className="text-xs text-light-steel">+968 90 000 000</p>
+              <p className="text-xs text-light-steel mb-1">United Kingdom</p>
+              <p className="text-xs text-light-steel">+44 7950 364 456</p>
             </div>
           </div>
 
@@ -99,8 +102,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/compliance" className="text-light-steel hover:text-teal transition-colors">
-                  QHSE & Compliance
+                <Link href="/policy" className="text-light-steel hover:text-teal transition-colors">
+                  Policy
                 </Link>
               </li>
               <li>
@@ -120,7 +123,7 @@ export function Footer() {
             <p className="text-xs text-light-steel">
               <strong>Email:</strong>
               <br />
-              info@verdant-eng.com
+              info@oceanergyme.com
             </p>
           </div>
         </div>
@@ -128,10 +131,10 @@ export function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 py-6 flex flex-col sm:flex-row items-center justify-between">
           <p className="text-xs text-light-steel">
-            &copy; {currentYear} Verdant Engineering. All rights reserved.
+            &copy; {currentYear} Ocean Energy Middle East. All rights reserved.
           </p>
           <p className="text-xs text-light-steel mt-4 sm:mt-0">
-            Premium engineering consultancy, Oman. Serving the Gulf's most critical industrial operations.
+            Premium engineering consultancy serving hydrocarbon, cryogenic, refining, and infrastructure sectors globally.
           </p>
         </div>
       </div>

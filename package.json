@@ -1,7 +1,7 @@
 {
-  "name": "verdant-engineering",
+  "name": "ocean-energy-middle-east",
   "version": "1.0.0",
-  "description": "Verdant Engineering - Premium B2B Engineering Services Website",
+  "description": "Ocean Energy Middle East - Premium B2B Engineering Services Website",
   "private": true,
   "scripts": {
     "dev": "next dev",

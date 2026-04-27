@@ -6,7 +6,7 @@ import { CTABanner } from '@/components/CTABanner'
 import { CASE_STUDIES } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Verdant Engineering | Portfolio & Case Studies',
+  title: 'Ocean Energy Middle East | Portfolio & Case Studies',
   description:
     'Case studies showcasing our engineering projects and solutions across oil & gas, LNG, refining, and industrial sectors.',
 }

@@ -4,9 +4,9 @@ import { Footer } from '@/components/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Verdant Engineering | Premium B2B Engineering Services',
+  title: 'Ocean Energy Middle East | Premium B2B Engineering Services',
   description:
-    'Verdant Engineering delivers premium engineering consultancy for oil & gas, cryogenic, refining, and industrial sectors globally.',
+    'Ocean Energy Middle East delivers premium engineering consultancy for oil & gas, cryogenic, refining, and industrial sectors globally.',
   keywords:
     'engineering consultancy, oil & gas, LNG, process engineering, technical safety, industrial engineering',
   viewport: 'width=device-width, initial-scale=1',
