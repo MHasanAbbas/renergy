@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { SectionIntro } from '@/components/SectionIntro'
 import { ServiceCard } from '@/components/ServiceCard'
 import { CTABanner } from '@/components/CTABanner'
@@ -8,6 +9,94 @@ export const metadata: Metadata = {
   title: 'Ocean Energy Middle East | Engineering Services',
   description:
     'Professional engineering services for oil and gas, cryogenic, refining, and industrial projects across the full project lifecycle.',
+}
+
+const heroGears = [
+  { x: 164, y: 154, outerRadius: 56, coreRadius: 18, teeth: 14, label: 'Process' },
+  { x: 256, y: 220, outerRadius: 40, coreRadius: 14, teeth: 12, label: 'Safety' },
+  { x: 342, y: 150, outerRadius: 48, coreRadius: 16, teeth: 12, label: 'Control' },
+  { x: 428, y: 234, outerRadius: 62, coreRadius: 20, teeth: 16, label: 'Piping' },
+] as const
+
+const heroBadges = [
+  { x: 96, y: 78, label: 'Mechanical Static' },
+  { x: 350, y: 70, label: 'Instrumentation' },
+  { x: 78, y: 308, label: 'Rotating Equipment' },
+  { x: 326, y: 328, label: 'Pipeline Systems' },
+] as const
+
+function Gear({
+  x,
+  y,
+  outerRadius,
+  coreRadius,
+  teeth,
+  label,
+}: {
+  x: number
+  y: number
+  outerRadius: number
+  coreRadius: number
+  teeth: number
+  label: string
+}) {
+  return (
+    <g>
+      {Array.from({ length: teeth }).map((_, index) => {
+        const angle = (360 / teeth) * index
+
+        return (
+          <rect
+            key={`${label}-${angle}`}
+            x={x - 5}
+            y={y - outerRadius - 8}
+            width="10"
+            height="18"
+            rx="2"
+            fill="rgba(232, 243, 255, 0.76)"
+            opacity="0.82"
+            transform={`rotate(${angle} ${x} ${y})`}
+          />
+        )
+      })}
+      <circle
+        cx={x}
+        cy={y}
+        r={outerRadius}
+        fill="rgba(10, 27, 46, 0.52)"
+        stroke="rgba(232, 243, 255, 0.72)"
+        strokeWidth="2.5"
+      />
+      <circle
+        cx={x}
+        cy={y}
+        r={outerRadius - 14}
+        fill="rgba(9, 23, 41, 0.28)"
+        stroke="rgba(125, 224, 220, 0.72)"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx={x}
+        cy={y}
+        r={coreRadius}
+        fill="rgba(125, 224, 220, 0.2)"
+        stroke="rgba(255, 255, 255, 0.9)"
+        strokeWidth="2"
+      />
+      <path
+        d={`M ${x - outerRadius + 18} ${y} H ${x + outerRadius - 18}`}
+        stroke="rgba(125, 224, 220, 0.7)"
+        strokeWidth="1.5"
+        strokeDasharray="5 7"
+      />
+      <path
+        d={`M ${x} ${y - outerRadius + 18} V ${y + outerRadius - 18}`}
+        stroke="rgba(125, 224, 220, 0.7)"
+        strokeWidth="1.5"
+        strokeDasharray="5 7"
+      />
+    </g>
+  )
 }
 
 export default function Services() {
@@ -44,49 +133,112 @@ export default function Services() {
 
           <div className="relative">
             <div className="absolute -inset-4 rounded-[20px] bg-teal/10 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[20px] border border-white/10 bg-white/5 p-6 shadow-[0_26px_80px_rgba(2,10,20,0.36)] backdrop-blur-sm">
-              <div className="absolute inset-0 bg-[linear-gradient(145deg,_rgba(255,255,255,0.08),_transparent_46%,_rgba(30,123,124,0.08)_100%)]" />
-              <svg
-                viewBox="0 0 520 380"
-                className="relative h-full w-full"
-                role="img"
-                aria-label="Interconnected engineering disciplines network diagram"
-              >
-                <defs>
-                  <linearGradient id="services-network" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#7de0dc" stopOpacity="0.95" />
-                    <stop offset="100%" stopColor="#dce7f4" stopOpacity="0.4" />
-                  </linearGradient>
-                </defs>
-                <g fill="none" stroke="url(#services-network)" strokeWidth="2">
-                  <path d="M138 98h102l46 58 88-18" opacity="0.75" />
-                  <path d="M138 98l-36 100 84 70 100-34 88 42" opacity="0.68" />
-                  <path d="M242 98l42 136" strokeDasharray="7 8" opacity="0.58" />
-                  <path d="M374 138l34 92-80 52" strokeDasharray="7 8" opacity="0.52" />
-                  <path d="M186 268l36-108 64-4" opacity="0.72" />
-                </g>
-                {[
-                  { x: 138, y: 98, r: 34, label: 'Process' },
-                  { x: 242, y: 98, r: 26, label: 'Safety' },
-                  { x: 374, y: 138, r: 30, label: 'Control' },
-                  { x: 102, y: 198, r: 28, label: 'Piping' },
-                  { x: 186, y: 268, r: 30, label: 'Static' },
-                  { x: 286, y: 234, r: 32, label: 'Rotating' },
-                  { x: 408, y: 310, r: 34, label: 'Pipeline' },
-                ].map((node) => (
-                  <g key={node.label}>
-                    <circle cx={node.x} cy={node.y} r={node.r + 10} fill="rgba(30,123,124,0.08)" />
-                    <circle cx={node.x} cy={node.y} r={node.r} fill="rgba(14,31,54,0.92)" stroke="rgba(125,224,220,0.95)" strokeWidth="2.4" />
-                    <text x={node.x} y={node.y + 5} textAnchor="middle" fill="#eef5ff" fontSize="12" fontWeight="700" letterSpacing="0.08em">
-                      {node.label}
-                    </text>
+            <div className="relative overflow-hidden rounded-[20px] border border-white/10 bg-white/5 shadow-[0_26px_80px_rgba(2,10,20,0.36)] backdrop-blur-sm">
+              <div className="relative aspect-[11/8]">
+                <Image
+                  src="/images/services-hero.jpg"
+                  alt="Industrial engineering facility with interconnected service systems"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 44vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(145deg,_rgba(10,20,36,0.2)_0%,_rgba(10,20,36,0.56)_48%,_rgba(10,20,36,0.82)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.08)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,_transparent_1px)] bg-[size:36px_36px] opacity-20" />
+
+                <svg
+                  viewBox="0 0 520 380"
+                  className="absolute inset-0 h-full w-full"
+                  role="img"
+                  aria-label="Interconnected mechanical engineering services diagram"
+                >
+                  <defs>
+                    <linearGradient id="gear-link" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#7de0dc" stopOpacity="0.95" />
+                      <stop offset="100%" stopColor="#eef5ff" stopOpacity="0.55" />
+                    </linearGradient>
+                    <linearGradient id="badge-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="rgba(8, 25, 44, 0.88)" />
+                      <stop offset="100%" stopColor="rgba(13, 39, 66, 0.72)" />
+                    </linearGradient>
+                  </defs>
+
+                  <g fill="none" stroke="url(#gear-link)" strokeWidth="3">
+                    <path d="M112 152 H 210" opacity="0.9" />
+                    <path d="M296 150 H 366" opacity="0.82" />
+                    <path d="M196 184 L 232 208" opacity="0.82" />
+                    <path d="M278 210 L 374 230" opacity="0.75" />
+                    <path d="M160 258 C 210 310, 286 328, 356 316" opacity="0.56" strokeDasharray="6 10" />
+                    <path d="M124 108 C 164 74, 236 60, 322 86" opacity="0.5" strokeDasharray="6 10" />
                   </g>
-                ))}
-                <rect x="48" y="308" width="132" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(125,224,220,0.2)" />
-                <text x="114" y="330" textAnchor="middle" fill="#d9ebf8" fontSize="13">
-                  Integrated delivery
-                </text>
-              </svg>
+
+                  {heroGears.map((gear) => (
+                    <Gear key={gear.label} {...gear} />
+                  ))}
+
+                  {heroGears.map((gear) => (
+                    <text
+                      key={`${gear.label}-text`}
+                      x={gear.x}
+                      y={gear.y + gear.outerRadius + 28}
+                      textAnchor="middle"
+                      fill="#eef5ff"
+                      fontSize="13"
+                      fontWeight="700"
+                      letterSpacing="0.08em"
+                    >
+                      {gear.label}
+                    </text>
+                  ))}
+
+                  {heroBadges.map((badge) => (
+                    <g key={badge.label}>
+                      <rect
+                        x={badge.x}
+                        y={badge.y}
+                        width="138"
+                        height="30"
+                        rx="7"
+                        fill="rgba(9, 24, 41, 0.78)"
+                        stroke="rgba(125, 224, 220, 0.34)"
+                      />
+                      <text
+                        x={badge.x + 69}
+                        y={badge.y + 19}
+                        textAnchor="middle"
+                        fill="#dbe8f6"
+                        fontSize="11.5"
+                        fontWeight="600"
+                        letterSpacing="0.06em"
+                      >
+                        {badge.label}
+                      </text>
+                    </g>
+                  ))}
+
+                  <rect
+                    x="48"
+                    y="322"
+                    width="168"
+                    height="36"
+                    rx="9"
+                    fill="rgba(255,255,255,0.08)"
+                    stroke="rgba(125,224,220,0.28)"
+                  />
+                  <text x="132" y="345" textAnchor="middle" fill="#eef5ff" fontSize="12.5" fontWeight="700" letterSpacing="0.08em">
+                    Integrated delivery
+                  </text>
+                </svg>
+
+                <div className="absolute bottom-5 right-5 rounded-sm border border-white/10 bg-navy/70 px-4 py-3 backdrop-blur-sm">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-teal">
+                    Multi-discipline
+                  </p>
+                  <p className="mt-1 text-sm text-light-steel">
+                    Process, safety, control, piping and mechanical systems engineered together.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
