@@ -41,14 +41,14 @@ export function Hero({
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-[0.28] brightness-[0.78] saturate-[0.86]"
+          className="object-cover opacity-[0.44] brightness-[0.84] saturate-[0.92]"
           style={{ objectPosition: imagePosition }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(180deg, rgba(31, 53, 90, 0.62) 0%, rgba(31, 53, 90, 0.8) 46%, #1f355a 100%)',
+              'linear-gradient(180deg, rgba(31, 53, 90, 0.46) 0%, rgba(31, 53, 90, 0.66) 48%, rgba(31, 53, 90, 0.84) 100%)',
           }}
         />
       </div>
@@ -61,13 +61,13 @@ export function Hero({
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-[0.68] brightness-[0.88] saturate-[0.9] scale-[1.03]"
+          className="object-cover opacity-[0.78] brightness-[0.96] saturate-[0.94] scale-[1.03]"
           style={{
             objectPosition: imagePosition,
             WebkitMaskImage:
-              'linear-gradient(to left, rgba(0, 0, 0, 1) 4%, rgba(0, 0, 0, 0.98) 24%, rgba(0, 0, 0, 0.86) 42%, rgba(0, 0, 0, 0.58) 60%, rgba(0, 0, 0, 0.18) 78%, transparent 94%)',
+              'linear-gradient(to left, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 0.98) 26%, rgba(0, 0, 0, 0.84) 44%, rgba(0, 0, 0, 0.52) 62%, rgba(0, 0, 0, 0.16) 80%, transparent 94%)',
             maskImage:
-              'linear-gradient(to left, rgba(0, 0, 0, 1) 4%, rgba(0, 0, 0, 0.98) 24%, rgba(0, 0, 0, 0.86) 42%, rgba(0, 0, 0, 0.58) 60%, rgba(0, 0, 0, 0.18) 78%, transparent 94%)',
+              'linear-gradient(to left, rgba(0, 0, 0, 1) 6%, rgba(0, 0, 0, 0.98) 26%, rgba(0, 0, 0, 0.84) 44%, rgba(0, 0, 0, 0.52) 62%, rgba(0, 0, 0, 0.16) 80%, transparent 94%)',
           }}
         />
       </div>
@@ -76,7 +76,7 @@ export function Hero({
         className="absolute inset-0 hidden md:block"
         style={{
           background:
-            'linear-gradient(90deg, #1f355a 0%, rgba(31, 53, 90, 0.97) 28%, rgba(31, 53, 90, 0.78) 48%, rgba(31, 53, 90, 0.28) 100%)',
+            'linear-gradient(90deg, rgba(31, 53, 90, 0.94) 0%, rgba(31, 53, 90, 0.86) 28%, rgba(31, 53, 90, 0.58) 50%, rgba(31, 53, 90, 0.18) 100%)',
         }}
       />
 
@@ -84,7 +84,7 @@ export function Hero({
         className="absolute inset-0"
         style={{
           background:
-            'radial-gradient(circle at 78% 28%, rgba(255, 255, 255, 0.12), transparent 18%), radial-gradient(circle at 72% 72%, rgba(30, 123, 124, 0.18), transparent 24%)',
+            'radial-gradient(circle at 78% 28%, rgba(255, 255, 255, 0.1), transparent 20%), radial-gradient(circle at 72% 72%, rgba(30, 123, 124, 0.14), transparent 26%)',
         }}
       />
 

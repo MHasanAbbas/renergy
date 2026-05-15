@@ -14,7 +14,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20 gap-4">
           {/* Logo */}
           <Link href="/" className="flex min-w-0 flex-shrink-0 items-center py-2">
-            <Logo priority widthClassName="w-[150px] sm:w-[180px] lg:w-[210px]" />
+            <Logo priority widthClassName="w-[176px] sm:w-[206px] lg:w-[238px]" />
           </Link>
 
           {/* Desktop Navigation */}

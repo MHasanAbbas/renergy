@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import './globals.css'
@@ -9,10 +9,14 @@ export const metadata: Metadata = {
     'Ocean Energy Middle East delivers premium engineering consultancy for oil & gas, cryogenic, refining, and industrial sectors globally.',
   keywords:
     'engineering consultancy, oil & gas, LNG, process engineering, technical safety, industrial engineering',
-  viewport: 'width=device-width, initial-scale=1',
   icons: {
     icon: '/favicon.ico',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({

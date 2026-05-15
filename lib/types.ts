@@ -19,17 +19,6 @@ export interface Sector {
   image: string
 }
 
-export interface CaseStudy {
-  id: string
-  title: string
-  sector: string
-  disciplines: string[]
-  challenge: string
-  solution: string
-  outcome: string
-  image: string
-}
-
 export interface NavItem {
   label: string
   href: string

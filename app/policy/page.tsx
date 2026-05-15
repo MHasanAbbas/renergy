@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Ocean Energy Middle East | Policy',
+  title: 'Ocean Energy Middle East Ltd. | Policy',
   description:
-    'Read Ocean Energy Middle East policies covering HSSE commitments and legal compliance standards.',
+    'Read Ocean Energy Middle East Ltd. policies covering HSSE commitments and legal compliance standards.',
 }
 
 const hsseCommitments = [
@@ -87,27 +87,17 @@ function PolicyList({
 function PolicyCard({
   title,
   items,
-  tone = 'light',
 }: {
   title: string
   items: string[]
-  tone?: 'light' | 'dark'
 }) {
-  const isDark = tone === 'dark'
-
   return (
-    <section
-      className={
-        isDark
-          ? 'rounded-sm border border-white/10 bg-navy p-8 shadow-sm sm:p-10'
-          : 'rounded-sm border border-light-steel bg-white p-8 shadow-sm sm:p-10'
-      }
-    >
-      <h3 className={`font-heading text-2xl font-bold ${isDark ? 'text-white' : 'text-navy'}`}>
+    <section className="rounded-sm border border-light-steel bg-white p-8 shadow-sm sm:p-10">
+      <h3 className="font-heading text-2xl font-bold text-navy">
         {title}
       </h3>
       <div className="mt-6">
-        <PolicyList items={items} textClassName={isDark ? 'text-light-steel' : 'text-graphite'} />
+        <PolicyList items={items} />
       </div>
     </section>
   )
@@ -115,129 +105,76 @@ function PolicyCard({
 
 export default function PolicyPage() {
   return (
-    <>
-      <section className="relative overflow-hidden bg-navy pt-20">
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,_#1d3457_0%,_#152844_48%,_#0f1f35_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_24%,_rgba(30,123,124,0.18),_transparent_22%),radial-gradient(circle_at_78%_28%,_rgba(183,203,228,0.12),_transparent_18%),radial-gradient(circle_at_70%_78%,_rgba(30,123,124,0.14),_transparent_24%)]" />
+    <section className="bg-off-white py-20 sm:py-28">
+      <div className="mx-auto max-w-5xl px-6 sm:px-8">
+        <div className="rounded-sm border border-light-steel bg-white p-8 shadow-sm sm:p-12">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal">
+            Policies
+          </p>
+          <h1 className="font-heading text-5xl font-bold leading-tight text-navy sm:text-6xl">
+            HSSE policy and legal compliance standards.
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-graphite">
+            Ocean Energy Middle East Ltd. (&quot;OEME&quot;) maintains a policy framework that places health, safety, security, and environmental responsibility alongside disciplined engineering quality and lawful business conduct.
+          </p>
 
-        <div className="relative mx-auto grid min-h-[72vh] max-w-7xl items-center gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
-          <div className="max-w-2xl">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-teal">
-              Policies
-            </p>
-            <h1 className="font-heading text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
-              HSSE policy and legal compliance standards.
-            </h1>
-            <p className="mt-7 max-w-xl text-lg leading-relaxed text-light-steel sm:text-xl">
-              Ocean Energy Middle East maintains a policy framework that places health, safety, security, and environmental responsibility alongside disciplined engineering quality and lawful business conduct.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="#hsse-policy"
-                className="inline-flex items-center rounded-sm bg-teal px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-dark"
-              >
-                View HSSE Policy
-              </Link>
-              <Link
-                href="#legal-compliance"
-                className="inline-flex items-center rounded-sm border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-light-steel backdrop-blur-sm transition-colors hover:border-white/25 hover:bg-white/10"
-              >
-                View Legal Compliance
-              </Link>
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="absolute -inset-4 rounded-[20px] bg-teal/10 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[20px] border border-white/10 bg-white/5 p-6 shadow-[0_26px_80px_rgba(2,10,20,0.36)] backdrop-blur-sm">
-              <div className="absolute inset-0 bg-[linear-gradient(145deg,_rgba(255,255,255,0.08),_transparent_46%,_rgba(30,123,124,0.08)_100%)]" />
-              <div className="relative grid gap-4 sm:grid-cols-2">
-                {[
-                  { label: 'Policy 01', title: 'HSSE Policy Statement' },
-                  { label: 'Policy 02', title: 'Legal Compliance & Standards' },
-                  { label: 'Priority', title: 'People, environment, quality' },
-                  { label: 'Scope', title: 'Design through operation' },
-                ].map((item) => (
-                  <div key={item.title} className="rounded-sm border border-white/10 bg-navy/40 p-5">
-                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-teal">
-                      {item.label}
-                    </p>
-                    <p className="mt-3 text-lg font-semibold leading-snug text-white">
-                      {item.title}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="#hsse-policy"
+              className="inline-flex items-center rounded-sm bg-teal px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-dark"
+            >
+              View HSSE Policy
+            </Link>
+            <Link
+              href="#legal-compliance"
+              className="inline-flex items-center rounded-sm border border-light-steel px-6 py-3 text-sm font-semibold text-navy transition-colors hover:border-teal/40 hover:text-teal"
+            >
+              View Legal Compliance
+            </Link>
           </div>
         </div>
-      </section>
 
-      <section id="hsse-policy" className="bg-off-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 sm:px-8">
-          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="rounded-sm border border-light-steel bg-white p-10 shadow-sm sm:p-12">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal">
-                HSSE Policy Statement
-              </p>
-              <h2 className="font-heading text-4xl font-bold leading-tight text-navy sm:text-5xl">
-                HSSE starts at concept and design phase and continues through operation and maintenance.
-              </h2>
-              <div className="mt-8 space-y-5 text-lg leading-relaxed text-graphite">
-                <p>
-                  The main aim of Ocean Energy Middle East is to continually improve the quality of our services and products while protecting people and the environment. Emphasis must be placed on ensuring human health, operational safety, environmental protection, quality enhancement, and community goodwill.
-                </p>
-                <p>
-                  HSSE starts from the concept and design phase of the project and continues to the operation and maintenance phase of the facility.
-                </p>
-                <p>
-                  This commitment is in the best interests of our customers, our employees, and the communities in which we work.
-                </p>
-                <p>
-                  Ocean Energy Middle East requires active commitment to, and accountability for, HSSE from all employees and contractors. Our management plays an important role in communicating, implementing, and ensuring compliance with HSSE policies and standards.
-                </p>
-              </div>
-            </div>
-
-            <div className="rounded-sm bg-navy p-10 text-white shadow-sm sm:p-12">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-teal">
-                Policy Focus
-              </p>
-              <h3 className="mt-4 font-heading text-3xl font-bold leading-tight">
-                Protection, prevention, quality, and preparedness must be built into every project stage.
-              </h3>
-              <div className="mt-8 space-y-6 text-light-steel">
-                <div className="border-l-2 border-teal pl-5">
-                  Protect people at all times.
-                </div>
-                <div className="border-l-2 border-teal pl-5">
-                  Reduce environmental impact through disciplined engineering decisions.
-                </div>
-                <div className="border-l-2 border-teal pl-5">
-                  Continually improve quality, performance, and emergency readiness.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-10 rounded-sm border border-light-steel bg-white p-10 shadow-sm sm:p-12">
-            <p className="mb-8 text-sm font-semibold uppercase tracking-[0.18em] text-teal">
-              We Are Committed To
+        <div className="mt-10 space-y-10">
+          <section
+            id="hsse-policy"
+            className="rounded-sm border border-light-steel bg-white p-8 shadow-sm sm:p-12"
+          >
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal">
+              HSSE Policy Statement
             </p>
-            <div className="grid gap-x-12 gap-y-6 lg:grid-cols-2">
+            <h2 className="font-heading text-4xl font-bold leading-tight text-navy sm:text-5xl">
+              HSSE starts at concept and design phase and continues through operation and maintenance.
+            </h2>
+            <div className="mt-8 space-y-5 text-lg leading-relaxed text-graphite">
+              <p>
+                The main aim of Ocean Energy Middle East Ltd. is to continually improve the quality of our services and products while protecting people and the environment. Emphasis must be placed on ensuring human health, operational safety, environmental protection, quality enhancement, and community goodwill.
+              </p>
+              <p>
+                HSSE starts from the concept and design phase of the project and continues to the operation and maintenance phase of the facility.
+              </p>
+              <p>
+                This commitment is in the best interests of our customers, our employees, and the communities in which we work.
+              </p>
+              <p>
+                Ocean Energy Middle East Ltd. requires active commitment to, and accountability for, HSSE from all employees and contractors. Our management plays an important role in communicating, implementing, and ensuring compliance with HSSE policies and standards.
+              </p>
+            </div>
+
+            <div className="mt-10 rounded-sm bg-off-white p-8">
+              <p className="mb-6 text-sm font-semibold uppercase tracking-[0.18em] text-teal">
+                We Are Committed To
+              </p>
               <PolicyList items={hsseCommitments} />
+              <p className="mt-8 text-base leading-relaxed text-graphite">
+                This policy shall be regularly reviewed to ensure it continues to meet the particular needs of our clients across the globe. These commitments are in addition to our basic obligation to comply with international and local standards, as well as all applicable laws and regulations relevant to each project location.
+              </p>
             </div>
-            <p className="mt-10 text-base leading-relaxed text-graphite">
-              This policy shall be regularly reviewed to ensure it continues to meet the particular needs of our clients across the globe. These commitments are in addition to our basic obligation to comply with international and local standards, as well as all applicable laws and regulations relevant to each project location.
-            </p>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <section id="legal-compliance" className="bg-white py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl px-6 sm:px-8">
-          <div className="max-w-4xl">
+          <section
+            id="legal-compliance"
+            className="rounded-sm border border-light-steel bg-white p-8 shadow-sm sm:p-12"
+          >
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-teal">
               Legal Compliance & Standards
             </p>
@@ -246,30 +183,30 @@ export default function PolicyPage() {
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-graphite">
               <p>
-                Ocean Energy Middle East is committed to creating and complying with lawful human-resources policies and practices in all aspects of employment, including recruitment, evaluation, promotion, training, discipline, development, compensation, and termination.
+                Ocean Energy Middle East Ltd. is committed to creating and complying with lawful human-resources policies and practices in all aspects of employment, including recruitment, evaluation, promotion, training, discipline, development, compensation, and termination.
               </p>
               <p>
-                Ocean Energy Middle East will comply with the applicable laws and regulations of the countries where we operate, including any commitments Ocean Energy Middle East makes in relation to government policy and applicable regulatory requirements.
+                Ocean Energy Middle East Ltd. will comply with the applicable laws and regulations of the countries where we operate, including any commitments Ocean Energy Middle East Ltd. makes in relation to government policy and applicable regulatory requirements.
               </p>
               <p>
-                Within the limits of the law, Ocean Energy Middle East will ensure that employment-related decisions are based on relevant qualifications, merit, performance, and other job-related factors.
+                Within the limits of the law, Ocean Energy Middle East Ltd. will ensure that employment-related decisions are based on relevant qualifications, merit, performance, and other job-related factors.
               </p>
             </div>
-          </div>
 
-          <div className="mt-14 grid gap-8 lg:grid-cols-2">
-            <PolicyCard title="Our Policy Is To" items={policyRequirements} />
-            <PolicyCard title="Your Responsibility" items={personalResponsibilities} />
-            <PolicyCard title="Harassment & Respect" items={harassmentStandards} />
-            <PolicyCard title="Standards of Behaviour" items={behaviourStandards} />
-          </div>
+            <div className="mt-14 grid gap-8 lg:grid-cols-2">
+              <PolicyCard title="Our Policy Is To" items={policyRequirements} />
+              <PolicyCard title="Your Responsibility" items={personalResponsibilities} />
+              <PolicyCard title="Harassment & Respect" items={harassmentStandards} />
+              <PolicyCard title="Standards of Behaviour" items={behaviourStandards} />
+            </div>
 
-          <div className="mt-8 grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <PolicyCard title="Our Responsibility" items={organisationResponsibilities} />
-            <PolicyCard title="Staff Responsibility" items={staffResponsibilities} tone="dark" />
-          </div>
+            <div className="mt-8 grid gap-8 lg:grid-cols-2">
+              <PolicyCard title="Our Responsibility" items={organisationResponsibilities} />
+              <PolicyCard title="Staff Responsibility" items={staffResponsibilities} />
+            </div>
+          </section>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }

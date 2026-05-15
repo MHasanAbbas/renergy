@@ -111,7 +111,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <SectionIntro
             label="Our Expertise"
-            title="Seven Core Engineering Disciplines"
+            title="Core Disciplines"
             description="We operate across the complete spectrum of engineering disciplines required to design, specify, and deliver complex industrial projects from concept to operation."
           />
 
@@ -232,9 +232,7 @@ export default function Home() {
       <section className="py-20 sm:py-28 bg-off-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <SectionIntro
-            label="Market Focus"
-            title="Five Core Industrial Sectors"
-            description="We specialise in the sectors where complex industrial operations face the most significant engineering challenges. Our expertise is deep, our experience is proven."
+            title="Expertise"
           />
 
           {/* Sectors Grid */}
@@ -250,19 +248,18 @@ export default function Home() {
       <section className="py-20 sm:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <SectionIntro
-            label="Our Process"
-            title="From Concept to Certainty"
+            title="From Concept to Execution"
             description="Every project follows a proven methodology that ensures comprehensive understanding, rigorous analysis, and executable engineering solutions."
           />
 
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
             {[
-              { number: '01', title: 'Feasibility', desc: 'Understand the opportunity, define scope' },
+              { number: '01', title: 'Feasibility / Concept', desc: 'Understand the opportunity, define scope' },
               { number: '02', title: 'FEED', desc: 'Front-end engineering design & cost assessment' },
-              { number: '03', title: 'Detailed', desc: 'Complete engineering for procurement & build' },
+              { number: '03', title: 'Detailed Engineering', desc: 'Complete engineering for procurement & build' },
               { number: '04', title: 'Procurement', desc: 'Equipment specification & vendor management' },
               { number: '05', title: 'Commissioning', desc: 'Startup support & performance validation' },
-              { number: '06', title: 'Handover', desc: 'Operations support & knowledge transfer' },
+              { number: '06', title: 'Operational Support / Training', desc: 'Operations support & knowledge transfer' },
             ].map((stage, idx) => (
               <div key={idx} className="text-center">
                 <div className="text-4xl font-heading font-bold text-teal mb-3">

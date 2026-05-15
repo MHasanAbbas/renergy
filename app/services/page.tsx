@@ -111,9 +111,9 @@ export default function Services() {
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-teal">
               Engineering Services
             </p>
-            <h1 className="font-heading text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
-              Seven engineering disciplines. One integrated delivery model.
-            </h1>
+              <h1 className="font-heading text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
+                Engineering disciplines. One integrated delivery model.
+              </h1>
             <p className="mt-7 max-w-xl text-lg leading-relaxed text-light-steel sm:text-xl">
               We provide professional engineering services for oil &amp; gas, cryogenics and refining projects, covering the full project lifecycle from concept selection and FEED through to detailed design and execution support.
             </p>
@@ -141,10 +141,10 @@ export default function Services() {
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 44vw"
-                  className="object-cover"
+                  className="object-cover scale-[1.02]"
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(145deg,_rgba(10,20,36,0.2)_0%,_rgba(10,20,36,0.56)_48%,_rgba(10,20,36,0.82)_100%)]" />
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.08)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,_transparent_1px)] bg-[size:36px_36px] opacity-20" />
+                <div className="absolute inset-0 bg-[linear-gradient(145deg,_rgba(10,20,36,0.16)_0%,_rgba(10,20,36,0.42)_48%,_rgba(10,20,36,0.68)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.08)_1px,_transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,_transparent_1px)] bg-[size:36px_36px] opacity-15" />
 
                 <svg
                   viewBox="0 0 520 380"

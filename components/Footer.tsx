@@ -12,14 +12,14 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="inline-flex max-w-full mb-6 rounded-sm bg-white px-3 py-2">
-              <Logo widthClassName="w-[160px] sm:w-[180px]" />
+              <Logo widthClassName="w-[184px] sm:w-[204px]" />
             </Link>
             <p className="text-sm text-light-steel leading-relaxed">
               Professional engineering services to oil & gas, cryogenics and refining industries.
             </p>
             <div className="mt-6">
-              <p className="text-xs text-light-steel mb-1">United Kingdom</p>
-              <p className="text-xs text-light-steel">+44 7950 364 456</p>
+              <p className="text-xs text-light-steel mb-1">Muscat, Oman</p>
+              <p className="text-xs text-light-steel">+968 9947 2300</p>
             </div>
           </div>
 
@@ -28,27 +28,27 @@ export function Footer() {
             <h4 className="font-heading font-semibold text-sm mb-6 text-white">Services</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/services#process" className="text-light-steel hover:text-teal transition-colors">
+                <Link href="/services#process-engineering" className="text-light-steel hover:text-teal transition-colors">
                   Process Engineering
                 </Link>
               </li>
               <li>
-                <Link href="/services#safety" className="text-light-steel hover:text-teal transition-colors">
+                <Link href="/services#technical-safety" className="text-light-steel hover:text-teal transition-colors">
                   Technical Safety
                 </Link>
               </li>
               <li>
-                <Link href="/services#control" className="text-light-steel hover:text-teal transition-colors">
+                <Link href="/services#control-instrumentation" className="text-light-steel hover:text-teal transition-colors">
                   Control & Instrumentation
                 </Link>
               </li>
               <li>
-                <Link href="/services#piping" className="text-light-steel hover:text-teal transition-colors">
+                <Link href="/services#piping-plotplan" className="text-light-steel hover:text-teal transition-colors">
                   Piping & Plot Planning
                 </Link>
               </li>
               <li>
-                <Link href="/services#mechanical" className="text-light-steel hover:text-teal transition-colors">
+                <Link href="/services#mechanical-static" className="text-light-steel hover:text-teal transition-colors">
                   Mechanical Equipment
                 </Link>
               </li>
@@ -97,8 +97,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-light-steel hover:text-teal transition-colors">
-                  Portfolio
+                <Link href="/services" className="text-light-steel hover:text-teal transition-colors">
+                  Services
                 </Link>
               </li>
               <li>
@@ -123,7 +123,7 @@ export function Footer() {
             <p className="text-xs text-light-steel">
               <strong>Email:</strong>
               <br />
-              info@oceanergyme.com
+              mail@oenergyme.com
             </p>
           </div>
         </div>
@@ -131,7 +131,7 @@ export function Footer() {
         {/* Footer Bottom */}
         <div className="border-t border-gray-800 py-6 flex flex-col sm:flex-row items-center justify-between">
           <p className="text-xs text-light-steel">
-            &copy; {currentYear} Ocean Energy Middle East. All rights reserved.
+            &copy; {currentYear} Ocean Energy Middle East Ltd. All rights reserved.
           </p>
           <p className="text-xs text-light-steel mt-4 sm:mt-0">
             Premium engineering consultancy serving hydrocarbon, cryogenic, refining, and infrastructure sectors globally.

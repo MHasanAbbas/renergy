@@ -27,12 +27,8 @@ This directory contains all hero, section, and background images used throughout
 - `sectors-utilities.jpg` - Utilities sector card (600x400px)
 - `sectors-hero.jpg` - Hero image for Sectors page (1200x800px minimum)
 
-### Compliance & Portfolio
-- `qhse-compliance.jpg` - Hero image for QHSE/Compliance page (1200x800px minimum)
-- `projects-capabilities.jpg` - Hero image for Portfolio page (1200x800px minimum)
-- `case-lng-optimization.jpg` - Case study image (600x400px)
-- `case-offshore-safety.jpg` - Case study image (600x400px)
-- `case-refinery-debot.jpg` - Case study image (600x400px)
+### Additional Assets
+- `qhse-compliance.jpg` - Supporting policy/compliance image asset (1200x800px minimum)
 
 ### Contact & Miscellaneous
 - `contact-oman-office.jpg` - Hero image for Contact page (1200x800px minimum)

@@ -1,11 +1,10 @@
-import { Service, Sector, CaseStudy, NavItem } from './types'
+import { Service, Sector, NavItem } from './types'
 
 export const NAVIGATION: NavItem[] = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/#about' },
   { label: 'Services', href: '/services' },
   { label: 'Sectors', href: '/sectors' },
-  { label: 'Portfolio', href: '/portfolio' },
   { label: 'Policy', href: '/policy' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -208,8 +207,6 @@ export const SECTORS: Sector[] = [
     image: '/images/sectors-utilities.jpg',
   },
 ]
-
-export const CASE_STUDIES: CaseStudy[] = []
 
 export const QHSE_PILLARS = [
   {

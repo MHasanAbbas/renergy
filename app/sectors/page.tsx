@@ -62,7 +62,7 @@ export default function Sectors() {
                   Global Presence
                 </h3>
                 <p className="text-graphite mb-4 leading-relaxed">
-                  We operate from offices in the United Kingdom and Saudi Arabia, serving clients across Europe, the Middle East, and South Asia. We understand local regulatory requirements, operational practices, environmental context, and business expectations in each region.
+                  We operate from Muscat, Oman, serving clients across the Middle East and beyond. We understand local regulatory requirements, operational practices, environmental context, and business expectations in the regions we support.
                 </p>
                 <p className="text-graphite leading-relaxed">
                   This isn't generic international engineering applied locally—it's engineering developed specifically for regional industrial operations.
@@ -117,7 +117,7 @@ export default function Sectors() {
           <SectionIntro
             label="Track Record"
             title="Proven Delivery Across Sectors"
-            description="Our portfolio demonstrates consistent capability across our core sectors, from feasibility studies through operational commissioning."
+            description="Our work demonstrates consistent capability across our core sectors, from feasibility studies through operational commissioning."
           />
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">

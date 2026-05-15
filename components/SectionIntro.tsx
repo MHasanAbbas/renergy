@@ -1,7 +1,7 @@
 interface SectionIntroProps {
   label?: string
   title: string
-  description: string
+  description?: string
   layout?: 'center' | 'left'
 }
 
@@ -27,9 +27,11 @@ export function SectionIntro({
       <h2 className="font-heading font-bold text-4xl sm:text-5xl text-navy mb-6 leading-tight">
         {title}
       </h2>
-      <p className="text-lg text-graphite leading-relaxed">
-        {description}
-      </p>
+      {description && (
+        <p className="text-lg text-graphite leading-relaxed">
+          {description}
+        </p>
+      )}
     </div>
   )
 }
